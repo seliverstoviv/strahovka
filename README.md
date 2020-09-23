@@ -1,4 +1,4 @@
-!()[strahovka-test.gif]
+![](strahovka-test.gif)
 # Тестовое задание Страховка.ру
 
 Сверстаны кастомные компоненты Select из VueMultiSelect и TextField, также первый опыт работы с VueMultiSelect. Сделаны все задания кроме последних 3-ех.
