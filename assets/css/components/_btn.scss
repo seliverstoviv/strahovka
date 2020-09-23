@@ -1,0 +1,82 @@
+$primary: #1334AC;
+$primary-light: #3F60D3;
+$primary-dark: #072280;
+$disabled: #b9c2e6;
+$def-gray: #c2c2c2;
+$def-gray2: #666666;
+$errors: #E21205;
+.btn {
+  display: inline-flex;
+  border-radius: 4px;
+  align-items: center;
+  flex: 0 0 auto;
+  font-weight: 500;
+  justify-content: center;
+  outline: 0;
+  position: relative;
+  text-decoration: none;
+  text-indent: .0892857143em;
+  transition-duration: .28s;
+  transition-property: transform,opacity;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  border: none;
+  height: 63px;
+  padding: 0 60px;
+  cursor: pointer;
+  background-color: $primary; 
+  color: white;
+  &:hover {
+    background-color: $primary-light;
+  }
+  &:active {
+    background-color: $primary-dark;
+    color: #fff;
+  }
+  &:focus {
+    box-shadow: 0 0 0 2px #fff,
+                0 0 0 4px #7cbbfa,
+  }
+  &:disabled {
+    background: $disabled;
+  }
+  &--outlined {
+    background: none;
+    color: $primary;
+    border: 1px solid $primary;
+    &:hover {
+      color: #fff;
+    }
+    &:focus {
+      background: none;
+      color: $primary;
+    }
+    &:disabled {
+      background: none;
+      color: $disabled;
+      border: 1px solid $disabled;
+    }
+  }
+  &--icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      color: $primary-light;
+    }
+    &:disabled {
+      color: $disabled;
+    }
+  }
+  &__content {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+  }
+}
