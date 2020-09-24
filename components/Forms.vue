@@ -129,6 +129,9 @@ const checkDoc = (value, vm) => {
   }
 };
 
+const noToday = (param) => (value) => {
+  return true;
+};
 
 // Если паспорт активен, то не проверяем права
 
